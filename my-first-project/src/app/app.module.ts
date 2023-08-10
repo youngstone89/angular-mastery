@@ -9,12 +9,15 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { CdkDragDropComponent } from './cdk-drag-drop/cdk-drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MaterialModule } from './material-module';
+import { KvPipeComponent } from './kv-pipe/kv-pipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SlideToggleComponent,
-    CdkDragDropComponent
+    CdkDragDropComponent,
+    KvPipeComponent,
+    KvPipeComponent
   ],
   imports: [
     BrowserModule,

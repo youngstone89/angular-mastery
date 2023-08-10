@@ -1,0 +1,16 @@
+<div class="content">
+    <ul *ngFor="let v of students.Jenifer">
+        <li>
+            {{v}}
+        </li>
+    </ul>
+
+    <ul *ngFor="let s of students | keyvalue">
+        <li>
+            <p>{{s.key}}</p>
+            <ul *ngFor="let v of s.value">
+                <li>{{v}}</li>
+            </ul>
+        </li>
+    </ul>
+</div>
