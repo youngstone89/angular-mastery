@@ -8,6 +8,7 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { CdkDragDropComponent } from './cdk-drag-drop/cdk-drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MaterialModule } from './material-module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    DragDropModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

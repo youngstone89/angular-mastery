@@ -18,6 +18,7 @@ export class CdkDragDropComponent {
     'Episode VIII - The Last Jedi'
   ];
   drop(event: CdkDragDrop<string[]>) {
+    console.log(event)
     moveItemInArray(this.movies, event.previousIndex, event.currentIndex);
   }
 
