@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { CdkDragDropComponent } from './cdk-drag-drop/cdk-drag-drop.component';
 import { KvPipeComponent } from './kv-pipe/kv-pipe.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path: 'key-value-pipe', component: KvPipeComponent,
+  },
+  {
+    path: 'accordion', component: AccordionComponent,
   }
 ];
 

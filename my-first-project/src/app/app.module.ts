@@ -10,6 +10,7 @@ import { CdkDragDropComponent } from './cdk-drag-drop/cdk-drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MaterialModule } from './material-module';
 import { KvPipeComponent } from './kv-pipe/kv-pipe.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { KvPipeComponent } from './kv-pipe/kv-pipe.component';
     SlideToggleComponent,
     CdkDragDropComponent,
     KvPipeComponent,
-    KvPipeComponent
+    KvPipeComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
