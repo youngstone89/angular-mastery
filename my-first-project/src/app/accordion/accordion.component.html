@@ -1,11 +1,13 @@
-<mat-expansion-panel>
-    <mat-expansion-panel-header>
-        <mat-panel-title>
-            expansion title
-        </mat-panel-title>
-        <mat-panel-description>
-            summary
-        </mat-panel-description>
-    </mat-expansion-panel-header>
-    <P>CONTENT</P>
-</mat-expansion-panel>
+<mat-accordion cdkDropList (cdkDropListDropped)="drop($event)">
+    <mat-expansion-panel *ngFor="let element of expressionList ; let i=index" cdkDrag>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{element.title}}
+            </mat-panel-title>
+            <mat-panel-description>
+                {{element.summary}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <P>{{element.content}}</P>
+    </mat-expansion-panel>
+</mat-accordion>
