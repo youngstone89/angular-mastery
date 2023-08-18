@@ -11,7 +11,11 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MaterialModule } from './material-module';
 import { KvPipeComponent } from './kv-pipe/kv-pipe.component';
 import { AccordionComponent } from './accordion/accordion.component';
-
+import { MatDialogComponent } from './mat-dialog/mat-dialog.component';
+import { MatDialogPopUpComponent } from './mat-dialog-pop-up/mat-dialog-pop-up.component';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,14 +23,19 @@ import { AccordionComponent } from './accordion/accordion.component';
     CdkDragDropComponent,
     KvPipeComponent,
     KvPipeComponent,
-    AccordionComponent
+    AccordionComponent,
+    MatDialogComponent,
+    MatDialogPopUpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    MatInputModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
