@@ -1,21 +1,16 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TestBed } from '@angular/core/testing';
 import { SlideToggleComponent } from './slide-toggle.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 describe('SlideToggleComponent', () => {
-  let component: SlideToggleComponent;
-  let fixture: ComponentFixture<SlideToggleComponent>;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [SlideToggleComponent]
-    });
-    fixture = TestBed.createComponent(SlideToggleComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  beforeEach(() => TestBed.configureTestingModule({
+    declarations: [SlideToggleComponent],
+    imports: [MatSlideToggleModule],
+  }));
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    let fixture = TestBed.createComponent(SlideToggleComponent);
+    let app = fixture.debugElement.componentInstance;
+    expect(app).toBeTruthy();
+  })
+})
