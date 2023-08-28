@@ -16,6 +16,7 @@ import { MatDialogPopUpComponent } from './mat-dialog-pop-up/mat-dialog-pop-up.c
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
+import { XlsxDownloaderComponent } from './xlsx-downloader/xlsx-downloader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     KvPipeComponent,
     AccordionComponent,
     MatDialogComponent,
-    MatDialogPopUpComponent
+    MatDialogPopUpComponent,
+    XlsxDownloaderComponent
   ],
   imports: [
     BrowserModule,
