@@ -7,6 +7,8 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { MatDialogComponent } from './mat-dialog/mat-dialog.component';
 import { XlsxDownloaderComponent } from './xlsx-downloader/xlsx-downloader.component';
 import { NgmodelExampleComponent } from './ngmodel-example/ngmodel-example.component';
+import { TableSelectionExampleComponent } from './table-selection-example/table-selection-example.component';
+import { SelectOverviewExampleComponent } from './select-overview-example/select-overview-example.component';
 
 const routes: Routes = [
   {
@@ -29,6 +31,12 @@ const routes: Routes = [
   },
   {
     path: 'ngmodel-example', component: NgmodelExampleComponent,
+  },
+  {
+    path: 'table-selection', component: TableSelectionExampleComponent,
+  },
+  {
+    path: 'select-basic', component: SelectOverviewExampleComponent,
   }
 ];
 
