@@ -6,6 +6,7 @@ import { KvPipeComponent } from './kv-pipe/kv-pipe.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { MatDialogComponent } from './mat-dialog/mat-dialog.component';
 import { XlsxDownloaderComponent } from './xlsx-downloader/xlsx-downloader.component';
+import { NgmodelExampleComponent } from './ngmodel-example/ngmodel-example.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path: 'xlsx-downloader', component: XlsxDownloaderComponent,
+  },
+  {
+    path: 'ngmodel-example', component: NgmodelExampleComponent,
   }
 ];
 

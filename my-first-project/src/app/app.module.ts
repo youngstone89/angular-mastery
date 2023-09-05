@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { XlsxDownloaderComponent } from './xlsx-downloader/xlsx-downloader.component';
+import { NgmodelExampleComponent } from './ngmodel-example/ngmodel-example.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { XlsxDownloaderComponent } from './xlsx-downloader/xlsx-downloader.compo
     AccordionComponent,
     MatDialogComponent,
     MatDialogPopUpComponent,
-    XlsxDownloaderComponent
+    XlsxDownloaderComponent,
+    NgmodelExampleComponent
   ],
   imports: [
     BrowserModule,
