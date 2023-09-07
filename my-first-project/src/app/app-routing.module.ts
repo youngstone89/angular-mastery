@@ -9,6 +9,8 @@ import { XlsxDownloaderComponent } from './xlsx-downloader/xlsx-downloader.compo
 import { NgmodelExampleComponent } from './ngmodel-example/ngmodel-example.component';
 import { TableSelectionExampleComponent } from './table-selection-example/table-selection-example.component';
 import { SelectOverviewExampleComponent } from './select-overview-example/select-overview-example.component';
+import { MatFormFieldExampleComponent } from './mat-form-field-example/mat-form-field-example.component';
+import { ScrollbarComponent } from './scrollbar/scrollbar.component';
 
 const routes: Routes = [
   {
@@ -37,6 +39,12 @@ const routes: Routes = [
   },
   {
     path: 'select-basic', component: SelectOverviewExampleComponent,
+  },
+  {
+    path: 'mat-form-field', component: MatFormFieldExampleComponent,
+  },
+  {
+    path: 'scrollbar', component: ScrollbarComponent,
   }
 ];
 

@@ -22,6 +22,10 @@ import { TableSelectionExampleComponent } from './table-selection-example/table-
 import { XlsxDownloaderComponent } from './xlsx-downloader/xlsx-downloader.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SelectOverviewExampleComponent } from './select-overview-example/select-overview-example.component';
+import { MatFormFieldExampleComponent } from './mat-form-field-example/mat-form-field-example.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ScrollbarComponent } from './scrollbar/scrollbar.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +39,9 @@ import { SelectOverviewExampleComponent } from './select-overview-example/select
     XlsxDownloaderComponent,
     NgmodelExampleComponent,
     TableSelectionExampleComponent,
-    SelectOverviewExampleComponent
+    SelectOverviewExampleComponent,
+    MatFormFieldExampleComponent,
+    ScrollbarComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +61,11 @@ import { SelectOverviewExampleComponent } from './select-overview-example/select
 
     MatTableModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

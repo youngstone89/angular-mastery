@@ -1,6 +1,7 @@
-<input [ngModel]="name" #ctrl="ngModel" required (ngModelChange)="onChange($event)">
-
+<input id="password" [ngModel]="name" #ctrl="ngModel" required (ngModelChange)="onChange($event)"
+    [type]="hide ? 'password' : 'text'">
 <p>Value: {{ name }}</p>
 <p>Valid: {{ ctrl.valid }}</p>
 
 <button (click)="setValue()">Set value</button>
+<button (click)="hide = !hide">Hide Toggle</button>

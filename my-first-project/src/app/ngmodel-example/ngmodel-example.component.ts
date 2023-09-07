@@ -8,6 +8,7 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
 export class NgmodelExampleComponent {
 
   name: string = '';
+  hide: boolean = false;
 
   onChange(value: any) {
     console.log(value);
@@ -15,8 +16,6 @@ export class NgmodelExampleComponent {
       console.log(`[prev: ${this.name}] [next: ${value}]]`)
       this.name = value;
     }
-
-
   }
 
 
